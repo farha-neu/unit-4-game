@@ -104,7 +104,7 @@ $(document).ready(function() {
               }
               win++;
               $("#win").html(win);
-              $("#msg").show();
+              $("#msg").css("visibility","visible");
               $("#msg").html("You won!!");
               flyBalloon();
           }
@@ -116,7 +116,7 @@ $(document).ready(function() {
             }
             loss++;
             $("#loss").html(loss);
-            $("#msg").show();
+            $("#msg").css("visibility","visible");
             $("#msg").html("You lost :( ");
           }
 
@@ -132,12 +132,13 @@ $(document).ready(function() {
     }
 
     function playAgain(){
-      $("#btn-play").show();
+      //takes up space
+      $("#btn-play").css("visibility","visible");
       // if button clicked
       $("#btn-play").click(function(){
            playAgn = true;
-           $(this).hide();
-           $("#msg").hide();
+           $("#btn-play").css("visibility","hidden");
+           $("#msg").css("visibility","hidden");
          
            generateTargetNumber();
            generateRandomNumbers();

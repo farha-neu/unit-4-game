@@ -82,7 +82,7 @@ html, body{
 }
 
 .crystal-container{
-    padding-top:130px;
+    padding-top:30px;
 }
 
 .winloss-container{
@@ -124,11 +124,14 @@ html, body{
 }
 
 #btn-play{
-    display: none;
+    visibility: hidden;
 }
 
 #btn-play:hover{
     background-color: lightsalmon;
 }
 
+/* .col-md-4, .col-md-12{
+    border:1px solid black;
+} */
 
