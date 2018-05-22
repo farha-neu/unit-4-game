@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- custom css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- bootstrap -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet"> 
@@ -14,7 +16,7 @@
 </head>
 <body>
    <div class="container">
-     
+         <!-- game title div -->
         <div class="game-name">
             <h1 class="text-center"><span>C</span><span>R</span><span>Y</span><span>S</span><span>T</span><span>A</span><span>L</span>
             <span>C</span><span>O</span><span>L</span><span>L</span><span>E</span><span>C</span><span>T</span><span>O</span><span>R</span></h1>
@@ -34,24 +36,24 @@
                         <img src="assets/images/icons8_No_Audio_40px.png" id="sound">
                 </button>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-lg"  data-toggle="modal" data-target="#exampleModalCenter">
-                        <i class="fas fa-info-circle fa-2x"></i>
+                <button type="button" class="btn btn-lg"  data-toggle="modal" data-target="#modalCenter">
+                        <i class="fas fa-question-circle fa-2x"></i>
                 </button>
             </div>
                     
             <!-- Modal -->
-            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="modalCenter" tabindex="-1" role="dialog" aria-labelledby="modalCenterTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">How to Play</h5>
+                                <h5 class="modal-title" id="modalLabel">How to Play</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                         </div>
                         <div class="modal-body">
                                 <p class="gameRules">You will be given a random number at the start of the game.
-                                You will be displayed 4 crystals. By clicking on a crystal, you will 
+                                Four crystals will be displayed on the screen. By clicking on a crystal, you will 
                                 add a specific amount of points to your total score.
                                 You will win the game by matching total score to random number, you lose the game if your
                                 total score goes above the random number.
@@ -64,13 +66,14 @@
             </div>  
         </div>
 
+        <!-- win or loss message -->
         <div class="row msg-container">
                 <div class="msg col-md-12 text-center"> 
                     <h1 id="msg">&nbsp;</h1>
                 </div>
         </div>
 
-        
+        <!-- play again button -->
         <div class="row play-container">
             <div class="play col-md-12 text-center"> 
                 <button type="button" class="btn btn-lg btn-play" id="btn-play">
@@ -79,12 +82,12 @@
             </div>
         </div>
 
-        <!-- row ends -->
+        <!-- crystal images -->
         <div class="row crystal-container">
-                <div class="col-md-12 text-center" id="crystals">
-                </div>
+                <div class="col-md-12 text-center" id="crystals"></div>
         </div>
 
+        <!-- number of win or loss  -->
         <div class="row winloss-container">
             <div class="winloss col-md-12 text-right">
                 <h1>WINS: <span id="win">0</span></h1>
